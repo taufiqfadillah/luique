@@ -1,15 +1,15 @@
-import Link from "next/link";
-import { Fragment, useEffect, useState } from "react";
-import { linkClick, toggleMenu } from "../utils";
+import Link from 'next/link';
+import { Fragment, useEffect, useState } from 'react';
+import { linkClick, toggleMenu } from '../utils';
 
 const Header = () => {
   const [day, setDay] = useState(true);
   useEffect(() => {
     if (day) {
-      document.querySelector("body").classList.add("light-skin");
-      document.querySelector("body").classList.remove("dark-skin");
+      document.querySelector('body').classList.add('light-skin');
+      document.querySelector('body').classList.remove('dark-skin');
     } else {
-      document.querySelector("body").classList.add("dark-skin");
+      document.querySelector('body').classList.add('dark-skin');
     }
   }, [day]);
 
@@ -26,12 +26,7 @@ const Header = () => {
               <div className="logo">
                 <Link href="/" legacyBehavior>
                   <a>
-                    <img
-                      width={228}
-                      height={38}
-                      src="assets/images/logo2.png"
-                      alt=""
-                    />
+                    <img width={228} height={38} src="assets/images/logo2.png" alt="" />
                   </a>
                 </Link>
               </div>
@@ -40,19 +35,13 @@ const Header = () => {
               {/* switcher btn */}
               <a
                 href="#"
-                className={`switcher-btn ${day ? "" : "active"}`}
+                className={`switcher-btn ${day ? '' : 'active'}`}
                 onClick={(e) => {
                   e.preventDefault();
                   setDay(!day);
-                }}
-              >
+                }}>
                 <span className="sw-before">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={23}
-                    height={23}
-                    viewBox="0 0 23 23"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} viewBox="0 0 23 23">
                     <path
                       id="Dark_Theme"
                       data-name="Dark Theme"
@@ -63,12 +52,7 @@ const Header = () => {
                   </svg>
                 </span>
                 <span className="sw-after">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22.22"
-                    height="22.313"
-                    viewBox="0 0 22.22 22.313"
-                  >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22.22" height="22.313" viewBox="0 0 22.22 22.313">
                     <path
                       id="Light_Theme"
                       data-name="Light Theme"
@@ -95,51 +79,28 @@ const Header = () => {
                           <ul className="menu-full">
                             <li className="menu-item">
                               <Link legacyBehavior href="/">
-                                <a
-                                  className="splitting-text-anim-2"
-                                  data-splitting="chars"
-                                >
+                                <a className="splitting-text-anim-2" data-splitting="chars">
                                   Home
                                 </a>
                               </Link>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#services-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#services-section" onClick={() => linkClick()}>
                                 Services
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#skills-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#skills-section" onClick={() => linkClick()}>
                                 Skills
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#works-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#works-section" onClick={() => linkClick()}>
                                 Works
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#resume-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#resume-section" onClick={() => linkClick()}>
                                 Resume
                               </a>
                             </li>
@@ -148,51 +109,27 @@ const Header = () => {
                                 className="splitting-text-anim-2"
                                 data-splitting="chars"
                                 href="/#testimonials-sec
-                                onClick={() => linkClick()}tion"
-                              >
+                                onClick={() => linkClick()}tion">
                                 Testimonials
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#pricing-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#pricing-section" onClick={() => linkClick()}>
                                 Pricing
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#blog-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#blog-section" onClick={() => linkClick()}>
                                 Blog
                               </a>
                             </li>
                             <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#contact-section"
-                                onClick={() => linkClick()}
-                              >
+                              <a className="splitting-text-anim-2" data-splitting="chars" href="/#contact-section" onClick={() => linkClick()}>
                                 Contact
                               </a>
                             </li>
-                            <li
-                              className={`menu-item menu-item-has-children has-children ${
-                                pageToggle ? "opened" : "closed"
-                              }`}
-                            >
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                onClick={() => setPageToggle(!pageToggle)}
-                              >
+                            <li className={`menu-item menu-item-has-children has-children ${pageToggle ? 'opened' : 'closed'}`}>
+                              <a className="splitting-text-anim-2" data-splitting="chars" onClick={() => setPageToggle(!pageToggle)}>
                                 Pages
                                 <i className="fas fa-chevron-down"></i>
                               </a>
@@ -200,56 +137,40 @@ const Header = () => {
                               <ul
                                 className="sub-menu"
                                 style={{
-                                  marginTop: "1rem",
-                                  display: `${pageToggle ? "block" : "none"}`,
-                                }}
-                              >
+                                  marginTop: '1rem',
+                                  display: `${pageToggle ? 'block' : 'none'}`,
+                                }}>
                                 <li className="menu-item">
                                   <Link legacyBehavior href="/works-list">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
+                                    <a className="splitting-text-anim-1" data-splitting="chars">
                                       Works (List)
                                     </a>
                                   </Link>
                                 </li>
                                 <li className="menu-item">
                                   <Link legacyBehavior href="/works">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
+                                    <a className="splitting-text-anim-1" data-splitting="chars">
                                       Works (Grid)
                                     </a>
                                   </Link>
                                 </li>
                                 <li className="menu-item">
                                   <Link legacyBehavior href="/work-single">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
+                                    <a className="splitting-text-anim-1" data-splitting="chars">
                                       Work Single Page
                                     </a>
                                   </Link>
                                 </li>
                                 <li className="menu-item">
                                   <Link legacyBehavior href="/blog">
-                                    <a
-                                      className=" splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
+                                    <a className=" splitting-text-anim-1" data-splitting="chars">
                                       Blog
                                     </a>
                                   </Link>
                                 </li>
                                 <li className="menu-item">
                                   <Link legacyBehavior href="/blog-single">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
+                                    <a className="splitting-text-anim-1" data-splitting="chars">
                                       Single Post
                                     </a>
                                   </Link>
@@ -260,29 +181,17 @@ const Header = () => {
                         </div>
                         {/* social */}
                         <div className="menu-social-links">
-                          <a
-                            href="http://dribbble.com"
-                            target="blank"
-                            className="scrolla-element-anim-1"
-                            title="dribbble"
-                          >
-                            <i className="fab fa-dribbble" />
+                          <a href="https://www.instagram.com/twfq_f/" target="blank" className="scrolla-element-anim-1" title="instagram">
+                            <i className="fab fa-instagram" />
                           </a>
-                          <a
-                            href="http://twitter.com"
-                            target="blank"
-                            className="scrolla-element-anim-1"
-                            title="twitter"
-                          >
+                          <a href="https://twitter.com/twfiqf" target="blank" className="scrolla-element-anim-1" title="twitter">
                             <i className="fab fa-twitter" />
                           </a>
-                          <a
-                            href="http://behance.com"
-                            target="blank"
-                            className="scrolla-element-anim-1"
-                            title="behance"
-                          >
-                            <i className="fab fa-behance" />
+                          <a href="https://www.facebook.com/twfqf" target="blank" className="scrolla-element-anim-1" title="facebook">
+                            <i className="fab fa-facebook" />
+                          </a>
+                          <a href="https://www.linkedin.com/in/taufiqfadillah/" target="blank" className="scrolla-element-anim-1" title="linkedin">
+                            <i className="fab fa-linkedin" />
                           </a>
                         </div>
                         <div className="v-line-block">

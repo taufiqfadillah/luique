@@ -36,7 +36,7 @@ const Index = () => {
                 </div>
                 <div className="description">
                   <div>
-                    <p>From Indonesia, Sengkang. I have rich experience in web design, also I am good at web development. I love to talk with you about our unique.</p>
+                    <p>From Indonesia, Yogyakarta. I have rich experience in web design, also I am good at web development. I love to talk with you about our unique.</p>
                   </div>
                   <div className="social-links">
                     <a target="_blank" rel="nofollow" href="https://twitter.com/twfiqf">
@@ -1009,7 +1009,7 @@ const Index = () => {
                       <span> Address </span>
                     </div>
                     <div className="lui-text">
-                      <span> North Tower, Toronto, Canada </span>
+                      <span> Yogyakarta, Indonesia </span>
                     </div>
                   </div>
                   <div className="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
@@ -1042,7 +1042,7 @@ const Index = () => {
                       <span> Phone </span>
                     </div>
                     <div className="lui-text">
-                      <span> +1 900 - 900 - 9000 </span>
+                      <span> +62 851 - 7540 - 8518 </span>
                     </div>
                   </div>
                 </div>
