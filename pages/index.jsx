@@ -31,7 +31,7 @@ const Index = () => {
                   </h1>
                   <div className="label lui-subtitle">
                     {' '}
-                    I am <strong>Web Developer</strong>
+                    I am <strong>Web Developer</strong> & <strong>Freelance</strong>
                   </div>
                 </div>
                 <div className="description">
@@ -61,7 +61,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="slide scrolla-element-anim-1 scroll-animate" data-animate="active">
-                <img decoding="async" src="assets/images/profile2.png" alt="<b>Zoé</b> Miller" />
+                <img decoding="async" src="assets/images/hero2.png" alt="<b>Taufiq</b> Fadillah" />
                 <span className="circle circle-1" />
                 <span
                   className="circle img-1"
@@ -1028,7 +1028,7 @@ const Index = () => {
                       <span> Email </span>
                     </div>
                     <div className="lui-text">
-                      <span> zoe.miller@mydomain.com </span>
+                      <span> info@taufiqproject.my.id </span>
                     </div>
                   </div>
                   <div className="numbers-item scrolla-element-anim-1 scroll-animate" data-animate="active">
