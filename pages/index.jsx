@@ -36,22 +36,25 @@ const Index = () => {
                 </div>
                 <div className="description">
                   <div>
-                    <p>From France, Paris. I have rich experience in web design, also I am good at wordpress. I love to talk with you about our unique.</p>
+                    <p>From Indonesia, Sengkang. I have rich experience in web design, also I am good at web development. I love to talk with you about our unique.</p>
                   </div>
                   <div className="social-links">
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href="https://twitter.com/twfiqf">
                       <i aria-hidden="true" className="fab fa-twitter" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <i aria-hidden="true" className="fab fa-dribbble" />
+                    <a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/taufiqfadillah/">
+                      <i aria-hidden="true" className="fab fa-linkedin" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
-                      <i aria-hidden="true" className="fab fa-behance" />
+                    <a target="_blank" rel="nofollow" href="https://www.instagram.com/twfq_f/">
+                      <i aria-hidden="true" className="fab fa-instagram" />
+                    </a>
+                    <a target="_blank" rel="nofollow" href="https://www.facebook.com/twfqf">
+                      <i aria-hidden="true" className="fab fa-facebook" />
                     </a>
                   </div>
                 </div>
                 <div className="bts">
-                  <a target="_blank" href="https://drive.google.com/" className="btn">
+                  <a target="_blank" href="https://www.taufiqproject.my.id/assets/cv/Taufiq-Fadillah-Resume-2023.pdf/" className="btn">
                     <span>Download CV</span>
                   </a>
                   <a href="#skills-section" className="btn-lnk">
@@ -85,14 +88,14 @@ const Index = () => {
                   <ul>
                     <li>
                       <span className="num">
-                        12 <strong>+</strong>
+                        3 <strong>+</strong>
                       </span>
                       <span className="value">
                         Years of <strong>Experience</strong>
                       </span>
                     </li>
                     <li>
-                      <span className="num">330</span>
+                      <span className="num">10+</span>
                       <span className="value">
                         Completed <strong>Projects</strong>
                       </span>
