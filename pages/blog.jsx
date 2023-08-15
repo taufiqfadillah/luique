@@ -40,11 +40,11 @@ const Blog = ({ blogs }) => {
                 {currentBlogs.map((blog) => (
                   <div key={blog._id} className="archive-item scrolla-element-anim-1 scroll-animate" data-animate="active">
                     <div className="image">
-                      <Link href={`/blog-single/${blog.slug}`} passHref legacyBehavior>
-                        <a>
+                      <Link href={`/blog-single?slug=${blog.slug}`} passHref key={blog._id}>
+                        <div>
                           {' '}
                           <img src={`https://dashboard.taufiqproject.my.id/assets/dashboard/blog/${blog.image}`} alt={blog.title} loading="lazy" />
-                        </a>
+                        </div>
                       </Link>
                     </div>
                     <div className="desc">
@@ -52,13 +52,13 @@ const Blog = ({ blogs }) => {
                         <span>{new Date(blog.date).toDateString()}</span>
                       </div>
                       <h5 className="lui-title">
-                        <Link href={`/blog-single/${blog.slug}`} legacyBehavior>
-                          <a>{blog.title}</a>
+                        <Link href={`/blog-single?slug=${blog.slug}`} passHref>
+                          <div>{blog.title}</div>
                         </Link>
                       </h5>
                       <div className="lui-text" dangerouslySetInnerHTML={{ __html: truncateContent(blog.content, 500) }} />
                       <div className="readmore">
-                        <Link href={`/blog-single/${blog.slug}`}>
+                        <Link href={`/blog-single?slug=${blog.slug}`} passHref>
                           <div className="lnk">Read more</div>
                         </Link>
                       </div>
