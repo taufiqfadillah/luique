@@ -378,7 +378,7 @@ const Index = () => {
                 <div className="skills-items">
                   <div className="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
                     <h6 className="name">
-                      <span> WordPress </span>
+                      <span> HTML </span>
                     </h6>
                     <div className="text">
                       <div>
@@ -398,7 +398,7 @@ const Index = () => {
                   </div>
                   <div className="skills-item scrolla-element-anim-1 scroll-animate" data-animate="active">
                     <h6 className="name">
-                      <span> Adobe XD </span>
+                      <span> Figma </span>
                     </h6>
                     <div className="text">
                       <div>

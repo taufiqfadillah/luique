@@ -37,21 +37,18 @@ const PortfolioIsotope = ({ noViewMore }) => {
           <a className={`c-pointer lui-subtitle ${activeBtn('*')}`} onClick={handleFilterKeyChange('*')} data-href=".works-col">
             All
           </a>
-          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-ui-ux-design')}`} onClick={handleFilterKeyChange('sorting-ui-ux-design')} data-href=".sorting-ui-ux-design">
-            UI UX Design
+          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-frontend')}`} onClick={handleFilterKeyChange('sorting-frontend')} data-href=".sorting-frontend">
+            FrontEnd Project
           </a>
-          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-photo')}`} onClick={handleFilterKeyChange('sorting-photo')} data-href=".sorting-photo">
-            Photography
+          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-backend')}`} onClick={handleFilterKeyChange('sorting-backend')} data-href=".sorting-backend">
+            Backend Project
           </a>
-          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-development')}`} onClick={handleFilterKeyChange('sorting-development')} data-href=".sorting-development">
-            Development
-          </a>
-          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-branding')}`} onClick={handleFilterKeyChange('sorting-branding')} data-href=".sorting-branding">
-            Branding
+          <a className={`c-pointer lui-subtitle ${activeBtn('sorting-other')}`} onClick={handleFilterKeyChange('sorting-other')} data-href=".sorting-other">
+            Other
           </a>
         </div>
         <div className="works-items works-masonry-items row">
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-backend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -64,7 +61,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Branding, Photography </span>
+                <span className="category"> Other, Backend </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Zorro</a>
@@ -85,7 +82,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-ui-ux-design ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-frontend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -98,7 +95,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Branding, UI UX Design </span>
+                <span className="category"> FrontEnd </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Gooir</a>
@@ -119,7 +116,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-frontend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -132,7 +129,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Development, UI UX Design </span>
+                <span className="category"> Other, FrontEnd </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Explore</a>
@@ -153,7 +150,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-backend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -166,7 +163,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Branding, Photography </span>
+                <span className="category"> Other, Backend </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Mozar</a>
@@ -187,7 +184,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-ui-ux-design ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-frontend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -200,7 +197,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Development, UI UX Design </span>
+                <span className="category"> Other, FrontEnd </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Stay Fit</a>
@@ -221,7 +218,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               />
             </div>
           </div>
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-development sorting-photo ">
+          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-other sorting-backend ">
             <div className="works-item scrolla-element-anim-1 scroll-animate" data-animate="active">
               <div className="image">
                 <div className="img">
@@ -234,7 +231,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
                 </div>
               </div>
               <div className="desc">
-                <span className="category"> Development, Photography </span>
+                <span className="category"> Other, Backend </span>
                 <h5 className="name">
                   <Link legacyBehavior href="/work-single">
                     <a>Kana</a>
